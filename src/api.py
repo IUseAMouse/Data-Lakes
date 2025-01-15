@@ -8,6 +8,13 @@ from datetime import datetime
 
 app = FastAPI(title="Data Lake API")
 
+###################################################################
+#                                                                 #
+#   FAITES MOI SAVOIR SI VOUS ARRIVEZ A FAIRE TOURNER LE CODE !   #
+#   MAINTENANT QUE LES TP COURS SONT FINIS, C'EST PROJET !        #
+#                                                                 #
+###################################################################
+
 # Configuration des connexions avec les bons paramètres
 class DatabaseConnections:
     def __init__(self):
