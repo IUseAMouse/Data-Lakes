@@ -1,4 +1,4 @@
-# TP5 - Pipeline de traitement des données avec Airflow
+# TP6 - API Gateway avec FastAPI
 Ce projet implémente une pipeline de traitement de données en trois étapes utilisant Airflow pour l'orchestration.
 
 Vous pouvez toujours lancer la pipeline en local avec DVC si vous le désirez nonobstant.
@@ -31,6 +31,5 @@ LocalStack (pour simuler S3)
 
 ## Votre objectif
 
-* Suivez le sujet du TP5 pour récupérer des données depuis l'API de HackerNews
-* Pour le faire vous avez 3 scripts à remplir : src/hn_api.py, src/es_handler.py, et dags/hackernews_dag.py
-* Vous pouvez vous inspirer de l'exemple du TP4 pour faire fonctionner votre DAG
+* Créer un script src/api.py qui servira d'API Gateway pour accéder aux services lancés par le docker-compose 
+* Un endpoint /raw pour le bucket raw, un endpoint /staging pour MySQL, et un endpoint /curated pour MongoDB
